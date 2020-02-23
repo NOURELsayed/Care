@@ -11,7 +11,7 @@ background-size:cover;
 height: 980px;
 background-position: center;
 `;
-export default function Home() {
+const Home = () => {
     return (
         <Wrapper> 
             <Navbar/>
@@ -19,3 +19,4 @@ export default function Home() {
         </Wrapper>
     )
 }
+export default Home
