@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import backgroundImage from '../Assest/bg.jpg'
 import HomePageForm from '../Components/HomePageForm';
 import Navbar from '../Components/Navbar';
-const Wrapper = styled.section`
+const Wrapper = styled.div`
 padding: 25px;
 background-image: url(${backgroundImage});
 background-repeat: no-repeat;

@@ -2,11 +2,8 @@
 import React from 'react'
 import { Button, Form } from "react-bootstrap";
 import styled from 'styled-components'
+import { Link } from "react-router-dom";
 
-const handleChange = ( e) => {
-    e.preventDefault()
- 
-  }
   const handleSubmit = (e) =>{
     e.preventDefault()
   }
@@ -19,14 +16,19 @@ const handleChange = ( e) => {
   display:inline-block
   `;
  const HomePageForm = () => {
-   
+
+  const handleChange = ( e) => {
+    e.preventDefault()
+    console.log(e.target.value)
+ 
+  }
   return (
     <StyledForm  onSubmit={handleSubmit}>
       <Form.Group controlId="formBasic">
-        <Form.Control type="select" placeholder="location" onChange={handleChange}/>
+        <Form.Control type="select" placeholder="location"type="text" onChange={handleChange}/>
       </Form.Group>
 
-      <Button variant="primary"type="submit"  >
+      <Button variant="primary"type="submit"  as={ Link } to="/details">
         Submit
       </Button>
     </StyledForm>

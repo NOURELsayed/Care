@@ -2,8 +2,8 @@ import React from "react";
 import { Button, Image } from "react-bootstrap";
 import styled from "styled-components";
 import HosImage from "../Assest/bg1.jpg";
-const HospitalCard = () => {
-  const Card = styled.div`
+
+const Card = styled.div`
     background-color: rgba(140, 140, 140, 0.2);
     border-radius: 25px;
     width: 60%;
@@ -15,6 +15,8 @@ const HospitalCard = () => {
     margin: auto;
     margin-bottom:15px
   `;
+const HospitalCard = () => {
+  
   return (
     <Card>
       <div style={{ fontSize: "1vw", textAlign: "right" }}>

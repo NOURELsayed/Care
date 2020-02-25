@@ -2,16 +2,7 @@ import React from "react";
 import { Button, Form, FormControl } from "react-bootstrap";
 import styled from "styled-components";
 
-
-const SearchBar = styled(Form)`
-margin:auto;
-marginTop:'10px'
-background-color: rgba(140, 140, 140, 0.2);
-border-radius: 25px;
-background: "none";
-border: groove;
-`;
-const Wrapper = styled.section`
+const Wrapper = styled.div`
 postion:absoulte
 padding:20px
 `;

@@ -13,15 +13,15 @@ const Routing = () => {
            <Home/>
           </Route>
 
-          <Route exact path="/about">
+          <Route  path="/about">
            <AboutUs/>
           </Route>
 
-          <Route exact path="/contact">
+          <Route  path="/contact">
            <Contact/>
           </Route>
 
-          <Route exact path="/details">
+          <Route path="/details">
            <Details/>
           </Route>
       </Switch>
